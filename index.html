@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispers of Anatolia | A Turkish Culinary Journey</title>
+    <meta name="description" content="Discover the gentle flavors and heartfelt stories of Turkish cuisine at Whispers of Anatolia. A minimalistic, interactive culinary experience inspired by Ghibli's warmth.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+ <div id="star-trail-container"></div>
+    <div class="custom-cursor"></div>
+
+    <nav class="main-nav">
+        <a href="#hero" class="nav-logo">Whispers</a>
+        <ul class="nav-links">
+            <li><a href="#hero" aria-label="Go to Home section">Home</a></li>
+            <li><a href="#about" aria-label="Learn about Our Story">Our Story</a></li>
+            <li><a href="#menu" aria-label="Explore Our Menu">Menu</a></li>
+            <li><a href="#blog" aria-label="Read Our Blog Stories">Stories</a></li>
+            <li><a href="#contact" aria-label="Get in touch with us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="fade-in-up">Whispers of Anatolia</h1>
+                <p class="fade-in-up delay-1">Where culinary traditions dance with the wind.</p>
+                <a href="#menu" class="btn-discover fade-in delay-2" aria-label="Discover Our Table">Discover Our Table</a>
+            </div>
+            <div class="hero-visual-container">
+                <img src="photo1.jpg" alt="Anatolian inspired serene scene" class="hero-image">
+                </div>
+        </section>
+
+        <section id="about" class="about-section scroll-reveal">
+            <h2 class="scroll-reveal-item">Our Journey</h2>
+            <p class="scroll-reveal-item delay-1">From the sun-drenched fields of Anatolia to your plate, our story is woven with passion, tradition, and the freshest ingredients.</p>
+            <div class="about-grid">
+                <div class="about-card scroll-reveal-item delay-2">
+                    <img src="photo2.jpg" alt="Traditional Icon">
+                    <h3>Rooted in Tradition</h3>
+                    <p>Centuries-old recipes passed down through generations, perfected with love.</p>
+                </div>
+                <div class="about-card scroll-reveal-item delay-3">
+                    <img src="photo3.avif" alt="Ingredients Icon">
+                    <h3>Harvested with Care</h3>
+                    <p>Only the finest, locally sourced ingredients find their way into our kitchen.</p>
+                </div>
+                <div class="about-card scroll-reveal-item delay-4">
+                    <img src="images.jpeg" alt="Passion Icon">
+                    <h3>Crafted with Passion</h3>
+                    <p>Every dish is a canvas, brought to life by our chefs' dedication.</p>
+                </div>
+            </div>
+            <a href="#" class="btn-story scroll-reveal-item delay-5" aria-label="Read Our Full Story">Read Our Full Story</a>
+        </section>
+
+        <section id="menu" class="menu-section scroll-reveal">
+            <h2 class="scroll-reveal-item">A Symphony of Flavors</h2>
+            <p class="scroll-reveal-item delay-1">Explore our curated selection of Turkish delights, each a harmony of taste and texture, waiting to be savored.</p>
+
+            <div class="menu-categories scroll-reveal-item delay-2">
+                <button class="menu-cat-btn active" data-category="all" aria-label="Show All Menu Items">All</button>
+                <button class="menu-cat-btn" data-category="breakfast" aria-label="Show Breakfast Menu">Dawn Bites</button>
+                <button class="menu-cat-btn" data-category="main" aria-label="Show Main Courses">Midday Feasts</button>
+                <button class="menu-cat-btn" data-category="dessert" aria-label="Show Desserts">Twilight Delights</button>
+                <button class="menu-cat-btn" data-category="drinks" aria-label="Show Drinks Menu">Elixirs & Brews</button>
+            </div>
+
+            <div class="menu-grid scroll-reveal-item delay-3">
+                <div class="menu-item-card" data-category="breakfast">
+                    <img src="creamycheese.jpeg" alt="Turkish Simit with cheese and olives">
+                    <h3>Simit & Creamy Cheese</h3>
+                    <p>A classic, fresh-baked sesame bagel served with a dollop of rich clotted cream and local honey.</p>
+                    <span class="price">₺85</span>
+                    <div class="dish-overlay">
+                        <span class="view-details" aria-label="View details for Simit & Creamy Cheese">View Details</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card" data-category="main">
+                    <img src="kebab.jpg" alt="Adana Kebab with grilled vegetables">
+                    <h3>Adana Kebab Platter</h3>
+                    <p>Succulent minced lamb kebab, grilled to perfection, served with bulgur pilaf and fresh salad.</p>
+                    <span class="price">₺220</span>
+                    <div class="dish-overlay">
+                        <span class="view-details" aria-label="View details for Adana Kebab Platter">View Details</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card" data-category="dessert">
+                    <img src="pistashio.jpeg" alt="Pistachio Baklava with syrup">
+                    <h3>Pistachio Baklava</h3>
+                    <p>Layers of delicate pastry, generously filled with crushed pistachios and drizzled with sweet syrup.</p>
+                    <span class="price">₺110</span>
+                    <div class="dish-overlay">
+                        <span class="view-details" aria-label="View details for Pistachio Baklava">View Details</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card" data-category="drinks">
+                    <img src="ayran.jpg" alt="Traditional Turkish Ayran in a glass">
+                    <h3>Hand-Churned Ayran</h3>
+                    <p>Our refreshing, traditional yogurt drink, perfect for cleansing the palate.</p>
+                    <span class="price">₺45</span>
+                    <div class="dish-overlay">
+                        <span class="view-details" aria-label="View details for Hand-Churned Ayran">View Details</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card" data-category="main">
+                    <img src="Manti-Turkish-Dumplings-square.jpg" alt="Turkish Manti dumplings with garlic yogurt">
+                    <h3>Delicate Manti (Turkish Dumplings)</h3>
+                    <p>Tiny handmade dumplings filled with spiced lamb, served with garlic yogurt and butter sauce.</p>
+                    <span class="price">₺180</span>
+                    <div class="dish-overlay">
+                        <span class="view-details" aria-label="View details for Delicate Manti">View Details</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card" data-category="breakfast">
+                    <img src="sunrise.jpeg" alt="Turkish Menemen eggs with tomatoes and peppers">
+                    <h3>Sunrise Menemen</h3>
+                    <p>Scrambled eggs with juicy tomatoes and green peppers, a flavorful start to your day.</p>
+                    <span class="price">₺130</span>
+                    <div class="dish-overlay">
+                        <span class="view-details" aria-label="View details for Sunrise Menemen">View Details</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-full-menu scroll-reveal-item delay-4" aria-label="View Our Full Menu">View Full Menu (PDF)</a>
+        </section>
+
+        <section id="blog" class="blog-section scroll-reveal">
+            <h2 class="scroll-reveal-item">Stories from the Hearth</h2>
+            <p class="scroll-reveal-item delay-1">Beyond the plate, discover the culture, traditions, and hidden gems that inspire our culinary journey.</p>
+
+            <div class="blog-grid scroll-reveal-item delay-2">
+                <article class="blog-post-card">
+                    <img src="bazar.jpg" alt="Bustling Turkish Spice Market">
+                    <div class="post-content">
+                        <h3>A Walk Through the Grand Spice Bazaar</h3>
+                        <p>Explore the vibrant aromas and bustling energy of Istanbul's historic spice markets...</p>
+                        <a href="#" class="read-more-link" aria-label="Read more about the Spice Bazaar">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post-card">
+                    <img src="turkishtea.webp" alt="Traditional Turkish Tea pouring">
+                    <div class="post-content">
+                        <h3>The Art of Turkish Tea: More Than Just a Drink</h3>
+                        <p>Delve into the cherished ritual of çay, a symbol of hospitality and conversation...</p>
+                        <a href="#" class="read-more-link" aria-label="Read more about Turkish Tea">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post-card">
+                    <img src="ayiklama.jpg" alt="Harvesting Saffron in Turkey">
+                    <div class="post-content">
+                        <h3>Secrets of Anatolian Saffron: A Golden Treasure</h3>
+                        <p>Uncover the rich history and delicate process behind Turkey's prized saffron...</p>
+                        <a href="#" class="read-more-link" aria-label="Read more about Anatolian Saffron">Read More</a>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="btn-all-posts scroll-reveal-item delay-3" aria-label="View All Blog Posts">View All Stories</a>
+        </section>
+
+        <section id="contact" class="contact-section scroll-reveal">
+            <h2 class="scroll-reveal-item">Find Us</h2>
+            <p class="scroll-reveal-item delay-1">We eagerly await your visit. Let us whisk you away on a culinary journey.</p>
+
+            <div class="contact-details-map scroll-reveal-item delay-2">
+                <div class="contact-info">
+                    <h3>Visit Our Cozy Corner</h3>
+                    <p><strong>Address:</strong> 123 Anatolian Way, Flavorville, Turkey</p>
+                    <p><strong>Phone:</strong> <a href="tel:+901234567890" aria-label="Call us at +90 123 456 7890">+90 123 456 7890</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:hello@whispersofanatolia.com" aria-label="Email us at hello@whispersofanatolia.com">hello@whispersofanatolia.com</a></p>
+                    <p><strong>Hours:</strong><br>
+                       Tuesday - Sunday: 12:00 PM - 10:00 PM<br>
+                       (Closed on Mondays)</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Follow us on Instagram"><img src="instagram.jpeg" alt="Instagram"></a>
+                        <a href="#" target="_blank" aria-label="Follow us on Facebook"><img src="facebook.jpeg" alt="Facebook"></a>
+                        <a href="#" target="_blank" aria-label="Follow us on Twitter"><img src="download.png" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.882143431631!2d28.974959!3d41.008237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe190b21a00a12e1a!2sHagia%20Sophia!5e0!3m2!1sen!2str!4v1678912345678!5m2!1sen!2str"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        aria-label="Location of Whispers of Anatolia on Google Maps"></iframe>
+                </div>
+            </div>
+
+            <form class="contact-form scroll-reveal-item delay-3">
+                <h3>Send Us a Message</h3>
+                <div class="form-group">
+                    <label for="name" class="visually-hidden">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="visually-hidden">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="visually-hidden">Your Message:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn-submit" aria-label="Send Your Message">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Whispers of Anatolia. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>
